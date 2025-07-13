@@ -230,6 +230,13 @@ overlay.addEventListener('click', () => {
 });
 
 </script>
+
+	<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('pwabuilder-sw.js')
+  }
+</script>
+
   
 </body>
 </html>
